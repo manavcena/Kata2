@@ -9,6 +9,14 @@ target/
 .idea/jarRepositories.xml
 .idea/compiler.xml
 .idea/libraries/
+/target
+/out
+/build
+/bin
+*.class
+*.jar
+*.war
+*.zip
 *.iws
 *.iml
 *.ipr
