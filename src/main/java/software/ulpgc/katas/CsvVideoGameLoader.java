@@ -17,7 +17,7 @@ public class CsvVideoGameLoader implements VideoGameLoader {
             String line = reader.readLine();
 
             while ((line = reader.readLine()) != null) {
-                if (line.isBlank()) continue; // Si la línea está vacía, la ignoramos
+                if (line.isBlank()) continue;
 
                 try {
                     VideoGame game = parseLine(line);

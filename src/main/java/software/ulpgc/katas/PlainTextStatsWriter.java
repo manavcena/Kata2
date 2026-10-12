@@ -10,7 +10,6 @@ public class PlainTextStatsWriter implements StatsWriter {
 
     @Override
     public void write(Map<String, Long> stats, OutputStream os) throws IOException {
-        // Envolvemos el OutputStream para escribir texto legible
         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(os));
 
         writer.write("--- RESUMEN DE JUEGOS POR GÉNERO ---");
@@ -22,6 +21,6 @@ public class PlainTextStatsWriter implements StatsWriter {
         }
 
         writer.newLine();
-        writer.flush(); // Empuja los datos por el tubo para asegurar que salgan
+        writer.flush();
     }
 }
